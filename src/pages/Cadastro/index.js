@@ -45,7 +45,7 @@ export default function Cadastro() {
   
       console.log('Form Data:', formData); // Log para ver os dados sendo enviados
   
-      const response = await axios.post('https://script.google.com/macros/s/AKfycbwUrKbq8aQfD2v9UQhKfvgQ-bHBCfyzHMkRwyxL_Cz953FFMmAmEihtA1xb-jpi-6ZC/exec', formData);
+      const response = await axios.post('https://script.google.com/macros/s/id_da_planilha/exec', formData);
   
       if (response.data.result === 'success') {
         Alert.alert('Sucesso!', 'Entrega registrada com sucesso!');
