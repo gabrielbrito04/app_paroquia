@@ -3,9 +3,9 @@ import { View, TextInput, ScrollView, StyleSheet } from 'react-native';
 import axios from 'axios';
 import { Table, Row, Rows } from 'react-native-table-component';
 
-const SPREADSHEET_ID = '1SPglzyjnDvMnZB4n6agdCFcirTuL-RpBL74uXSv0CgU'; // ID da sua planilha
+const SPREADSHEET_ID = 'id_planilha'; // ID da sua planilha
 const RANGE = 'Pessoa!A1:C'; // Intervalo desejado
-const API_KEY = 'AIzaSyBJjjZ599Aa2cA82TuNUxmXoiyNdjM6_jE'; // Sua chave de API
+const API_KEY = 'api_da_googlecloud'; // Sua chave de API
 
 const SheetsData = () => {
   const [data, setData] = useState([]);
